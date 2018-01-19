@@ -3,7 +3,7 @@
   <label>Name:</label>
   <p><input type="text" name="pet[name]" id="pet_name" value=""></p>
   <br>
- 
+
   <label>Add existing owner:</label>
   <% @owners.each do |o| %>
     <p><input type="checkbox" name="pet[owner_id]" id="<%= o.id %>" value="<%= o.id %>"><%= o.name %></input></p>
