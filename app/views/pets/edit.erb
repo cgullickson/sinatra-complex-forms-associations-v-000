@@ -6,7 +6,7 @@
 
   <label>Choose an existing owner:</label>
   <% Owner.all.each do |o| %>
-    <p><input type="checkbox" name="pet[owner_id]" id="<%= o.id %>" value="<%= o.id %>" <%= 'checked' if @pet.owner_id == o.id %>><%= o.name %></input></p>
+    <p><input type="radio" name="pet[owner_id]" id="<%= o.id %>" value="<%= o.id %>" <%= 'checked' if @pet.owner_id == o.id %>><%= o.name %></input></p>
     <% end %>
     <br>
 
